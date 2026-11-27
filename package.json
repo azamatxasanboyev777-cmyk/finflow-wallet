@@ -1,0 +1,27 @@
+{
+  "name": "finflow-wallet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FinFlow - Shaxsiy va jamoaviy hamyonlar hamda moliyaviy nazorat ilovasi (FinTech)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/api.test.mjs"
+  },
+  "dependencies": {
+    "@netlify/database": "^2.0.4",
+    "@netlify/functions": "^5.0.0",
+    "drizzle-orm": "^1.0.0-beta.22",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@netlify/vite-plugin": "^2.0.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "drizzle-kit": "^1.0.0-beta.22",
+    "vite": "^6.3.5"
+  }
+}

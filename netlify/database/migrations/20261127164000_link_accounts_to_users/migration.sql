@@ -1,0 +1,4 @@
+ALTER TABLE accounts
+ADD COLUMN IF NOT EXISTS user_id INTEGER NOT NULL DEFAULT 1 REFERENCES users(id) ON DELETE CASCADE;
+
+CREATE INDEX IF NOT EXISTS idx_accounts_user_id ON accounts(user_id);
